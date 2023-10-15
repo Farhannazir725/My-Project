@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: arial;
+}
+.form-section{
+    background-color: #e100ff;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 605px;
+}
+.inner-container{
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-top: 6px solid #002365;
+}
+h1{
+    text-transform: capitalize;
+    font-family: arial;
+    text-align: center;
+    font-size: 30px;
+}
+form{
+    width: 100%;
+}
+.form-section form .input-wrap{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+.form-section form .input-wrap input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 12px;
+    padding-left: 20px;
+    border:1px solid #bababa;
+    transition: all 0.3 ease;
+}
+.form-section form .input-wrap input:focus{
+    border-color: #002365;
+}
+.form-section .input-wrap label{
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        color: #999999;
+        font-weight: 400;
+        font-size: 13px;
+        pointer-events: none;
+        transform: translateY(-50%);
+        transition: all 0.3s ease;
+}
+.input-wrap input:focus ~ label{
+    top: 0%;
+    font-size: 16px;
+    color: #002365;
+    background-color: white;
+    transform: translateY(-50%);
+    padding: 5px;
+}
+.remember-pass input{
+    margin: 0;
+}
+.remember-pass{
+    text-transform: capitalize;
+    padding-bottom: 25px;
+    font-size: 15px;
+}
+button{
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0px 10px 0px;
+    background: #002365;
+    border: 0;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.google-btn{
+    background-color: #DB4437;
+}
+.fb-btn{
+    background-color: #4267B2;
+}
+.social-icon i{
+    padding-right: 10px;
+}
+.extra-field{
+    display: flex;
+    justify-content:space-between;
+    padding-top: 14px;
+}
+.forgot-pass a{
+    color: #0f3d93;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.fb-btn:hover,.log:hover,.google-btn:hover{
+    background-color: black;
+}
+a{  
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
